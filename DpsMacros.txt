@@ -1,0 +1,16 @@
+--Thrash
+#showtooltip
+/cast [nostance:2] Cat Form
+/cast [stance:2/3] Thrash
+
+--Rejuvenation/Bite
+#showtooltip Rejuvenation
+/cast [@mouseover,exists,noharm] Rejuvenation; Ferocious Bite
+
+--Cenarion Ward/Rip
+#showtooltip
+/cast [@mouseover,exists,noharm]Cenarion Ward; Rip
+
+--Dispel/Shred
+#showtooltip Nature's Cure
+/cast [@mouseover,help,nodead] Nature's Cure; [harm] Shred
