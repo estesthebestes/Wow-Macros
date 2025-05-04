@@ -21,6 +21,9 @@
 /cast [nostance:2,harm] Cat Form
 /cast [stance:2,harm,nodead] Rake
 
+--set focus
+/focus
+
 --Kick
 #showtooltip Skull Bash
 /cast [nostance:2] Cat Form
@@ -34,6 +37,11 @@
 #showtooltip Heart of the Wild
 /use Tempered Potion
 /cast Heart of the Wild
+
+--KittyVoke
+#showtooltip Convoke the Spirits
+/cast [nostance:2] Cat Form
+/cast [stance:2] Convoke the Spirits
 
 -- Wild growth + easy aoe dps (I do not recommend using this BUT you COULD if you REALLY wanted to)
 #showtooltip Wild Growth
