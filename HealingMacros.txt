@@ -1,0 +1,44 @@
+--Swiftmend and Grove Guardians
+#showtooltip Swiftmend
+/cast [@mouseover,help,nodead][help,nodead][@player] Grove Guardians
+/cast [@mouseover,help,nodead][help,nodead][@player] Swiftmend
+
+--Wild Growth and Innervate on CD
+#showtooltip Wild Growth
+/cast [@player,nostealth] Innervate
+/cast [@mouseover,help,nodead] Wild Growth
+
+-- Regrowth with swipe
+#showtooltip
+/cast [@mouseover,help,nodead] Regrowth; [harm,nostance:2] Cat Form; [harm] Swipe; Regrowth
+
+-- Regrowth + swipe + Nature's Vigil on CD
+explanation: 
+    1. no target -> Regrowth
+    2. mouseover ally -> Regrowth and pop Vigil (assumes you are going to be spamming so getting on CD can be good - not as optimal as manual use though)
+    3. enemy target (no mouseover) -> shift to cat and swipe, will hold vigil until healing a mouseover
+    I recommend testing this one for a bit so you get a feel for it, I really like this to automate aspects of gameplay 
+
+#showtooltip
+/cast [@mouseover, help]Nature's Vigil
+/cast [@mouseover,help,nodead] Regrowth; [harm,nostance:2] Cat Form; [harm] Swipe; Regrowth
+
+--convoke (healing)
+#showtooltip Convoke the Spirits
+/stopmacro [channeling]
+/cancelaura Bear Form
+/cancelaura Cat Form
+/cancelaura Travel Form
+/cancelaura Moonkin Form
+/cast Nature's Swiftness
+/cast Convoke the Spirits
+/cqs
+
+--efflo
+#showtooltip
+/cast [@cursor] Efflorescence
+
+--*******RAID HEALING ONLY Lifebloom************* ******DO NOT USE IN M+ YOU WILL BE TROLLING***************
+ #showtooltip 
+/cast [@player] Lifebloom
+

@@ -1,0 +1,37 @@
+--Mouseover Sooth
+#showtooltip Soothe
+/cast [@mouseover] Soothe
+
+
+--Dispel/Sooth
+    I do not personally use this since I have my dispel on the same keybind as shred, but this is a very good macro
+
+#showtooltip 
+/cast [@mouseover,exists,harm] Soothe; [@mouseover,exists,help] Nature's Cure; [harm] Soothe; Nature's Cure
+
+
+--bear form into frenzied regen (if talented)
+#showtooltip
+/cast [nostance][stance:2][stance:3][stance:4] Bear Form(Shapeshift)
+/cast Frenzied Regeneration
+
+--brez
+#showtooltip Rebirth
+/console Sound_EnableSFX 0
+/cast Nature's Swiftness
+/run UIErrorsFrame:Clear()
+/console Sound_EnableSFX 1
+/cast [@mouseover, help] Rebirth
+
+--cancelform
+/cancelform
+
+--Innervate
+/cast [@player] Innervate
+
+--Vortex + Push (cast sequence, I recommend a separate keybind for this compared to normal Vortex)
+#showtooltip
+/castsequence [@cursor] reset=10 Ursol's Vortex, Typhoon
+
+--stealth macro to not break it (it is spammable)
+/cast !Prowl

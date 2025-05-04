@@ -1,0 +1,17 @@
+-- the following are macros that are for EXTREMELY niche scenarios or pvp or the accursed BOOMIEWEAVING 
+
+--wild charge treant
+/cancelform [form:1/2/3/5]
+/cleartarget
+/targetexact Treant
+/use [noharm] Wild Charge
+/targetlasttarget
+/DISMOUNT
+
+--Boomieweaving Wrath
+#showtooltip Regrowth
+/cast [@mouseover, help]Nature's Vigil
+/cast [@mouseover,help,nodead] Regrowth; [harm] Wrath
+
+-- Boomieweaving Starfire (this felt wrong to make)
+/cast [@mouseover, exists, help] Rejuvenation; Starfire

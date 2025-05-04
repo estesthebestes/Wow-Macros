@@ -14,3 +14,29 @@
 --Dispel/Shred
 #showtooltip Nature's Cure
 /cast [@mouseover,help,nodead] Nature's Cure; [harm] Shred
+
+--Lifebloom/Rake
+#showtooltip Lifebloom
+/cast [@mouseover,help,nodead] Lifebloom
+/cast [nostance:2,harm] Cat Form
+/cast [stance:2,harm,nodead] Rake
+
+--Kick
+#showtooltip Skull Bash
+/cast [nostance:2] Cat Form
+/cast Skull Bash
+
+--focus Kick
+#showtooltip Skull Bash
+/cast [@focus,exists,nodead] Skull Bash
+
+--Heart of the Wild
+#showtooltip Heart of the Wild
+/use Tempered Potion
+/cast Heart of the Wild
+
+-- Wild growth + easy aoe dps (I do not recommend using this BUT you COULD if you REALLY wanted to)
+#showtooltip Wild Growth
+/cast [@mouseover,exists,noharm]Wild Growth
+/cast [nostance:2,harm] Cat Form
+/castsequence [harm] reset=4 Thrash, Swipe, Swipe, Swipe
